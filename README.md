@@ -1,13 +1,10 @@
 # Chatbox
 --Prosody Example Configuration File
 
---Information on configuring Prosody can be found on our
---website at http://prosody.im/doc/configure
+--Information on configuring Prosody can be found on our website at http://prosody.im/doc/configure
 
---Tip: You can check that the syntax of this file is correct
---when you have finished by running: luac -p prosody.cfg.lua
---If there are any errors, it will let you know what and where
---they are, otherwise it will keep quiet.
+--Tip: You can check that the syntax of this file is correct when you have finished by running: luac -p prosody.cfg.lua
+--If there are any errors, it will let you know what and where they are, otherwise it will keep quiet.
 
 --The only thing left to do is rename this file to remove the .dist ending, and fill$
 --blanks. Good luck, and happy Jabbering!
