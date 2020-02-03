@@ -4,39 +4,56 @@
 --Information on configuring Prosody can be found on our website at http://prosody.im/doc/configure
 
 --Tip: You can check that the syntax of this file is correct when you have finished by running: luac -p prosody.cfg.lua
+
 --If there are any errors, it will let you know what and where they are, otherwise it will keep quiet.
 
---The only thing left to do is rename this file to remove the .dist ending, and fill$
---blanks. Good luck, and happy Jabbering!
+--The only thing left to do is rename this file to remove the .dist ending, and fill$ blanks. Good luck, and happy Jabbering!
+
 ---------- Server-wide settings ----------
--- Settings in this section apply to the whole server and are the default settings
--- for any virtual hosts
--- This is a (by default, empty) list of accounts that are admins
--- for the server. Note that you must create the accounts separately
--- (see http://prosody.im/doc/creating_accounts for info)
--- Example: admins = { "user1@tsi.com", "user2@example.net" }
+
+--Settings in this section apply to the whole server and are the default settings for any virtual hosts
+
+--This is a (by default, empty) list of accounts that are admins for the server. Note that you must create the accounts separately (see http://prosody.im/doc/creating_accounts for info)
+
+--Example: admins = { "user1@tsi.com", "user2@example.net" } 
+
 admins = { }
--- Enable use of libevent for better performance under high load
--- For more information see: http://prosody.im/doc/libevent
+
+--Enable use of libevent for better performance under high load
+
+--For more information see: http://prosody.im/doc/libevent
+
 --use_libevent = true;
--- This is the list of modules Prosody will load on startup.
--- It looks for mod_modulename.lua in the plugins folder, so make sure that exists
-too.
-too.
--- Documentation on modules can be found at: http://prosody.im/doc/modules
+
+--This is the list of modules Prosody will load on startup.
+
+--It looks for mod_modulename.lua in the plugins folder, so make sure that exists too.
+
+--Documentation on modules can be found at: http://prosody.im/doc/modules
+
 modules_enabled = {
--- Generally required
+
+--Generally required
+
 "roster"; -- Allow users to have a roster. Recommended ;)
-"saslauth"; -- Authentication for clients and servers. Recommended if you
-want to log in.
+
+"saslauth"; -- Authentication for clients and servers. Recommended if you, want to log in.
+
 "tls"; -- Add support for secure TLS on c2s/s2s connections
+
 "dialback"; -- s2s dialback support
+
 "disco"; -- Service discovery
+
 "proxy65";
--- Not essential, but recommended
+
+--Not essential, but recommended
+
 "private"; -- Private XML storage (for room bookmarks, etc.)
+
 "vcard"; -- Allow users to set vCards
--- These are commented by default as they have a performance impact
+
+--These are commented by default as they have a performance impact
 --"privacy"; -- Support privacy lists
 --"compression"; -- Stream compression (Debian: requires lua-zlib module
 to work)
