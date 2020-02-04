@@ -50,7 +50,6 @@ modules_enabled = {
 --Not essential, but recommended
 
 "private"; -- Private XML storage (for room bookmarks, etc.)
-
 "vcard"; -- Allow users to set vCards
 
 --These are commented by default as they have a performance impact
